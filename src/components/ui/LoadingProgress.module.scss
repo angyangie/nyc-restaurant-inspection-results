@@ -1,0 +1,33 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background: #222;
+  overflow: hidden;
+}
+
+.shimmer {
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #27ae60 40%,
+    #f1c40f 60%,
+    transparent 100%
+  );
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  from { transform: translateX(-250%); }
+  to   { transform: translateX(400%); }
+}

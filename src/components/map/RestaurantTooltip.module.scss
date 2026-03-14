@@ -1,0 +1,63 @@
+.tooltip {
+  position: fixed;
+  z-index: 500;
+  background: rgba(18, 18, 30, 0.96);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px 14px;
+  min-width: 220px;
+  max-width: 280px;
+  pointer-events: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin-bottom: 2px;
+}
+
+.address {
+  font-size: 12px;
+  color: #bbb;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.borough {
+  font-size: 11px;
+  color: #888;
+  font-weight: 400;
+}
+
+.grade {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 3px 8px;
+}
+
+.key {
+  font-size: 11px;
+  color: #666;
+  text-align: right;
+}
+
+.val {
+  font-size: 11px;
+  color: #bbb;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
